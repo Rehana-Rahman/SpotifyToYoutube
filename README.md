@@ -32,7 +32,7 @@ pip install spotipy google-auth-oauthlib google-api-python-client requests
 ### 1. Clone the Repository
 
 ```
-git clone <your-repo-url>
+git clone https://github.com/Rehana-Rahman/spotify-to-youtube-transfer.git
 cd spotify-to-youtube-transfer
 ```
 
@@ -47,7 +47,9 @@ pip install spotipy google-auth-oauthlib google-api-python-client requests
 1. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
 2. Create a new app
 3. Copy your Client ID and Client Secret
-4. Add redirect URI: `http://127.0.0.1:8888/callback` (or use ngrok for mobile)
+4. Add redirect URI: `http://127.0.0.1:8888/callback`
+
+**Note for Termux/Mobile users:** If you encounter redirect URI issues on mobile, you can also use `http://localhost:8888/callback` as an alternative.
 
 ### 4. YouTube API Setup
 
@@ -73,7 +75,7 @@ SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8888/callback'
 python spotify_to_youtube.py
 ```
 
-1. The script will provide a Spotify login URL - open it, authorize the app, then copy the redirect URL back to the terminal
+1. The script will provide a Spotify login URL - open it in your browser, authorize the app, then copy the redirect URL back to the terminal
 2. Next, it will open a Google login URL - authorize YouTube access
 3. Enter your Spotify playlist URL or ID when prompted
 4. Watch as your playlist gets recreated on YouTube automatically
@@ -81,7 +83,7 @@ python spotify_to_youtube.py
 ## Notes & Tips
 
 - **Security**: This tool uses OAuth tokens only - your passwords are never stored
-- **Mobile/Termux users**: You may need ngrok to handle redirect URLs properly on mobile devices
+- **Mobile/Termux users**: The script works directly in Termux without additional tools needed
 - **Video matching**: The script tries to find official videos but may occasionally select covers or live versions
 - **Search accuracy**: You can adjust the number of search results checked per song in the script settings
 
