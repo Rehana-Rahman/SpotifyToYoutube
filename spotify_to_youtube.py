@@ -7,15 +7,15 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
 # ---------- CONFIG ----------
-SPOTIFY_CLIENT_ID = "613e026346794be88daaac78710967dc"
-SPOTIFY_CLIENT_SECRET = "72f911d0895e4b1d91c09f21f26b172d"
-SPOTIFY_REDIRECT_URI = "https://abcdef1234.ngrok.io/callback"
+SPOTIFY_CLIENT_ID = "add ur own beach :3"
+SPOTIFY_CLIENT_SECRET = "this too :3"
+SPOTIFY_REDIRECT_URI = "ugh this too :p"
 SPOTIFY_SCOPE = "playlist-read-private"
 
 YOUTUBE_OAUTH_FILE = "client_secrets.json"
 YOUTUBE_SCOPES = ["https://www.googleapis.com/auth/youtube"]
 
-SPOTIFY_PLAYLIST = "https://open.spotify.com/playlist/66xlJ7lqHLGMZ1JeD72t59?si=OYUDv1I0QnqVf_c9vbAIjg&pi=JMtk8KiBTcSAb"
+SPOTIFY_PLAYLIST = "any spotify playlist"
 MAX_SEARCH_RESULTS = 3
 # ----------------------------
 
